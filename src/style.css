@@ -1,0 +1,64 @@
+body {
+    font-family: 'Open Sans', 'Lucida Grande', arial, sans-serif;
+    margin: 10% 20%;
+}
+
+.todo-list {
+    flex-direction: column;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    box-shadow: 0.1px 1px 10px 5px grey;
+    padding: 10px;
+    height: 100%;
+    margin: 15% 20%;
+  }
+  
+  .todo-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+  }
+  
+  .todo-input {
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.388);
+    display: inline-block;
+    width: 97%;
+  }
+  
+  .todo-form-group {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.388);
+  }
+  
+  .todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 15px 0;
+  }
+  
+  .checkbox {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: grey;
+  }
+  
+  .dots {
+    color: black;
+  }
+  
+  .r-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fa-solid {
+    color: gray;
+  }
+  
