@@ -9,16 +9,23 @@ const List = [
   {
     description: 'Read a book',
     completed: true,
-    index: 2,
+    index: 3,
   },
   {
     description: 'Work out',
     completed: false,
-    index: 3,
+    index: 2,
+  },
+  {
+    description: 'Work in',
+    completed: false,
+    index: 0,
   },
 ];
 
 const forms = document.querySelector('.todo-form');
+
+List.sort((a,b) => a.index-b.index);
 
 List.forEach((item) => {
   forms.innerHTML += `<div class="todo-form-group r-div ${item.index}">
