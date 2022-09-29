@@ -3,7 +3,7 @@ module.exports = {
       collect: {
         /* Add configuration here */
         startServerCommand: 'npm start',
-        url: ['http://localhost:8080'],
+        staticDistDir: './src',
         numberOfRuns: 1,
         /* Add configuration here */
       },
