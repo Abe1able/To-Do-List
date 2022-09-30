@@ -23,7 +23,6 @@ body {
 .todo-input {
   border: none;
   padding: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.388);
   display: inline-block;
   width: 97%;
 }
@@ -43,12 +42,12 @@ body {
   margin-bottom: 20px;
 }
 
-button {
+/* button {
   border: none;
   width: 100%;
   padding: 10px;
   color: grey;
-}
+} */
 
 .dots {
   color: black;
@@ -61,4 +60,39 @@ button {
 
 .fa-solid {
   color: gray;
+}
+
+article span {
+  float: right;
+}
+
+.text-area-class {
+  border: none;
+  resize: none;
+  width: 70%;
+  display: inline-block;
+}
+
+.todo-btn {
+  border: none;
+  background: transparent;
+  float: right;
+}
+
+.line-break {
+  border-top: 1px solid #f1eaeaf2;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.clear-completed {
+  text-align: center;
+  opacity: 0.75;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  padding: 10px;
 }

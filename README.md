@@ -19,11 +19,15 @@ There are no prerequisites for this project.
 
 ### Setup
 
-Clone the repository and open the index.html file.
+Clone the repository 
 
 ### Install
 
-Install all the dependencies by running the command npm -i
+Install all the dependencies and necessary packages by running the command `npm -i`
+
+### Run
+
+To run the project, use the command `npm start`
 
 ### Link to Repo
 
