@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "build": "webpack",
     "start": "webpack serve --open"
   },
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Abe1able/To-Do-List/issues"
   },
-  "homepage": "https://github.com/Abe1able/To-Do-List/dist",
+  "homepage": "https://github.com/Abe1able/To-Do-List",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
