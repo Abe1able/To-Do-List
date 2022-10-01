@@ -1,5 +1,6 @@
 import './style.css';
 import clearCompletedTasks from './addRemove.js';
+import interactive from './interactive.js';
 
 class ToDoItem {
     constructor(description) {
@@ -94,5 +95,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }, false);
   }
 });
+
+document.addEventListener('click', (e) => {
+    interactive(e);
+    const todoId = e.target.parentElement.parentElement.id;
+    if (e.target.checked) {
+      const upDatedToDo = myToDo.getArray().map((todo) => {
+        if (todo.index === parseInt((todoId), 10)) {
+          const newTodo = { ...todo };
+          newTodo.completed = true;
+          return newTodo;
+        }
+        return todo;
+      });
+      myToDo.setArray(upDatedToDo);
+    } else {
+      const upDatedToDo = myToDo.getArray().map((todo) => {
+        if (todo.index === parseInt((todoId), 10)) {
+          const newTodo = { ...todo };
+          newTodo.completed = false;
+          return newTodo;
+        }
+        return todo;
+      });
+      myToDo.setArray(upDatedToDo);
+    }
+  });
 
 export default myToDo;
